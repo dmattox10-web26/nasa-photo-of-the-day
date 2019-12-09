@@ -72,9 +72,8 @@ h1 {
 }
 
 .author {
-  background-color: #9ECAFF;
+  background-color: rgb(20, 165, 218);
   height: 30px;
-  width: 110px;
   border-radius: 20px;
 }
 
