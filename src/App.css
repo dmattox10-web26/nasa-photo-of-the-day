@@ -1,33 +1,115 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  background-image: linear-gradient(to right, #034378, #2d4e68);
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+span.s1 {
+  position: absolute;
+  top: 0;
+  font-size: 15rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgb(20, 165, 218);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span.s2 {
+  font-weight: 800;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15rem;
+  text-transform: uppercase;
+  color: rgb(20, 165, 218);
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  position: relative;
+  height: 600px;
+  width: 900px;
+  margin: 200px auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.thumbnail {
+  float: left;
+  position: relative;
+  left: 30px;
+  top: -30px;
+  height: 470px;
+  width: 530px;
+  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+img.left {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+
+h1 {
+  padding-top: 15px;
+  font-size: 1.3rem;
+  color: #4B4B4B;
+}
+
+.author {
+  background-color: #9ECAFF;
+  height: 30px;
+  width: 110px;
+  border-radius: 20px;
+}
+
+h2 {
+  padding-top: 8px;
+  margin-right: 6px;
+  text-align: right;
+  font-size: 0.8rem;
+}
+
+.separator {
+  margin-top: 10px;
+  border: 1px solid #C3C3C3;
+}
+
+p {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 0.95rem;
+  line-height: 150%;
+  color: #4B4B4B;
+}
+
+h5 {
+  position: absolute;
+  left: 30px;
+  bottom: -120px;
+  font-size: 6rem;
+  color: #C3C3C3;
+}
+
+h6 {
+  position: absolute;
+  left: 30px;
+  bottom: -55px;
+  font-size: 2rem;
+  color: #C3C3C3;
 }
