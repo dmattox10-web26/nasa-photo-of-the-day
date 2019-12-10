@@ -58,7 +58,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div className="backing"><span className="s1">nasa</span><span className="s2">apod</span></div>
+        <div className="backing"></div>
         <Route exact path='/' render={(props) => <Card { ...props } url={ apodState.url } title={ apodState.title } copyright={ apodState.copyright } explanation={ apodState.explanation } media={ apodState.media_type } day={ displayDate.day } month={ displayDate.month } decrementDay={ decrementDay } incrementDay={ incrementDay } />} />
         <Route exact path='/2' render={(props) => <CardTwo {...props} url={ apodState.url } title={ apodState.title } copyright={ apodState.copyright } explanation={ apodState.explanation } media={ apodState.media_type } date={ apodState.date } />} />
       </div>
@@ -67,3 +67,5 @@ function App() {
 }
 
 export default App;
+
+// <span className="s1">nasa</span><span className="s2">apod</span>
