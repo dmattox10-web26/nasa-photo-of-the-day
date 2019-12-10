@@ -17,13 +17,18 @@ const Card = (props) => {
             <RightSide title={ props.title } author={ props.copyright } text={ props.explanation } />
             <h5>{ props.day }</h5>
             <h6>{ props.month }</h6>
-            <ul>
-                <li onClick={ props.decrementDay }><FontAwesomeIcon icon={ faStepBackward } /></li>
-                <li onClick={ props.incrementDay }><FontAwesomeIcon icon={ faStepForward } /></li>
-            </ul>
-            <div className='fab'><Link to='/2'><FontAwesomeIcon icon={ faArrowDown } /></Link></div>
+            
+                
+            
+            <div className='fab'><Link to='/2'><FontAwesomeIcon icon={ faArrowDown } size="3x"/></Link></div>
         </div>
     )
 }
 
 export default Card
+/*
+<ul>
+<li onClick={ props.decrementDay }><FontAwesomeIcon icon={ faStepBackward } /></li>
+<li onClick={ props.incrementDay }><FontAwesomeIcon icon={ faStepForward } /></li>
+</ul>
+*/

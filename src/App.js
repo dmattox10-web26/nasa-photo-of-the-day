@@ -18,14 +18,12 @@ function App() {
     return `${year}-${month}-${day}`
   }
   const incrementDay = () => {
-    /*
     if (moment() >= moment(activeDate, moment.ISO_8601).add(1, 'd')) {
       updateDate(moment(activeDate, moment.ISO_8601).add(1, 'd'))
     }
-    */
   }
   const decrementDay = () => {
-    //updateDate(moment(activeDate, moment.ISO_8601).subtract(1, 'd'))
+    updateDate(moment(activeDate, moment.ISO_8601).subtract(1, 'd'))
   }
   const [apodState, updateApod] = useState({
     copyright: "Author / Copyright Holder",
