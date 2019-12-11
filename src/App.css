@@ -6,6 +6,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 span.s1 {
   position: absolute;
   top: 0;
